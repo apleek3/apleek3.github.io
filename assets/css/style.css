@@ -88,7 +88,7 @@ hr {
 body {
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     /*background-color: gray;*/
-    background-image: url("images/scribble_light.png");
+    background-image: url("../images/scribble_light.png");
 }
 
 p {
