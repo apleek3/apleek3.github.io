@@ -4,6 +4,7 @@ $(document).ready(function () {
     var crystalsTotal = 0;
     var winsCounter = 0;
 
+    
     var crystals = []
     while (crystals.length < 4) {
         var randomCrystal = Math.round((Math.random() * (12 - 1)) + 1); // generates random # from 1-12
@@ -12,7 +13,9 @@ $(document).ready(function () {
         }
         crystals.push(randomCrystal); // Push random # to last item of crystals
     }
+
     console.log(crystals);
+
     // At the end - crystals should be an array with 3 indexes (length of 4) full of unique random numbers
 
     $("#targetNumber").text(targetNumber); //posts the target number to the page
@@ -34,10 +37,12 @@ $(document).ready(function () {
     redCrystal.prepend('<img id="red" class="img-thumbnail" src="./assets/images/red.png" />')
 
     // Add random numbers as attributes to newly created elements
+
     greenCrystal.attr("randomCrystalValue", crystals[0]);
     topazCrystal.attr("randomCrystalValue", crystals[1]);
     purpleCrystal.attr("randomCrystalValue", crystals[2]);
     redCrystal.attr("randomCrystalValue", crystals[3]);
+
 
     $("#advisory").text(""); //sets the advisor text to blank on-load
 
@@ -48,6 +53,19 @@ $(document).ready(function () {
         crystalsTotal = 0;
         $("#crystalCounter").text(crystalsTotal);
         $("#advisory").text("");
+        crystals = [];
+        while (crystals.length < 4) {
+            var randomCrystal = Math.round((Math.random() * (12 - 1)) + 1); // generates random # from 1-12
+            if (crystals.indexOf(randomCrystal) > -1) { // Checks if random # is in array
+                continue; // If it is, don't run next line
+            }
+            crystals.push(randomCrystal); // Push random # to last item of crystals
+        }
+        console.log(crystals);
+        greenCrystal.attr("randomCrystalValue", crystals[0]);
+        topazCrystal.attr("randomCrystalValue", crystals[1]);
+        purpleCrystal.attr("randomCrystalValue", crystals[2]);
+        redCrystal.attr("randomCrystalValue", crystals[3]);
 
     });
 
