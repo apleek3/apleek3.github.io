@@ -36,18 +36,13 @@ $(document).ready(function () {
         var source = $(this).attr("src");                           //creates source variable representing the gifs current info path for if / else statement
         //FIRST CLICK will assign the class 'animate' according to function
         if ($(this).hasClass('animate')) {
-            console.log(this);
-            console.log("a");
             $(this).removeClass('animate'); 
             $(this).addClass('still');                           //removes the class animate so the image can be fed through the if/else again properly
             $(this).attr('src', source.replace(/\.gif/gi, "_s.gif"))    //replaces a snippet in the source specified as \.gif with _s.gif. The "gi" denotes the "global ignore" case flag; which means "globally ignore any code snippet I have specified." Regular "i" did not work for all gifs.
         } else {
-            console.log(this);
-            console.log("b");
             $(this).removeClass('still');
             $(this).addClass('animate'); //adds the class 'animate'
             $(this).attr('src', source.replace(/\_s\.gif/gi, ".gif")) //replaces a snippet in the source specified as \_s.gif with .gif.
-        
         
         } // end of if
         
@@ -102,7 +97,6 @@ $(document).ready(function () {
                 $("#gifs").prepend(astronomyDiv);
 
             } // end of for
-
 
         }); // end of ajax 
 
