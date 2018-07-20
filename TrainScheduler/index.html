@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>Train Scheduler</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Firebase JavaScript Link -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid maxwidth">
+      <div class="navbar-header myheader">
+        <a class="navbar-brand myheader" href="#home">&ensp;Alexander Lee</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="paddown" href="../index.html">About</a>
+        </li>
+        <li class="active">
+          <a class="paddown" id="dividers" href="../portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a class="paddown" href="../contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-md-2 sidenav">
+
+      <p>
+        <a href="../TriviaGame/index.html">Trivia</a>
+      </p>
+      <p>
+        <a href="../WordGuessGame/index.html">Hangman</a>
+      </p>
+      <p>
+        <a href="../unit-4-game/index.html">Crystal Collector</a>
+      </p>
+      <p>
+        <a href="../GifTastic/index.html">GifTastic!</a>
+      </p>
+      <p>
+        <a href="./index.html">Train Scheduler</a>
+      </p>
+
+
+    </div>
+
+    <div class="col-md-10 fluid-container content maxwidth">
+      <div class="jumbotron">
+        <h1 class="display-4">TRAIN SCHEDULER</h1>
+        <h2 class="display-4">See a peer managed train scheduler! Crashes imminent.</h2>
+        <br>
+        <hr class="my-4">
+        <br>
+
+        <div class="card" style="width: 90%">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th scope="col">Frequency</th>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">First Train today was @:</th>
+                <th scope="col">Next Train Arrives in...</th>
+              </tr>
+            </thead>
+            <tbody id="trainTable">
+
+            </tbody>
+          </table>
+        </div>
+
+        <br>
+        <h3>Need to add a train to the schedule? Add it down here.</h3>
+        <!-- Text with spanID that gets filled with content -->
+        <div class="card" style="width: 90%">
+          <form>
+            <div class="form-group">
+              <label for="trainName">Name of the Train:</label>
+              <input type="text" class="form-control" id="trainName" aria-describedby="trainHelp" placeholder="What's the name of the train?">
+            </div>
+            <div class="form-group">
+              <label for="destinationName">Destination:</label>
+              <input type="text" class="form-control" id="destinationName" placeholder="What's the destination?">
+            </div>
+            <div class="form-group">
+              <label for="trainTime">Arrival Time:</label>
+              <input type="time" class="form-control" id="trainTime" placeholder="The train's arrival time?">
+            </div>
+            <div class="form-group">
+              <label for="frequency">Frequency:</label>
+              <input type="number" class="form-control" id="frequency" placeholder="Frequency of Arrival?">
+            </div>
+
+            <button id="form-submit" type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <div class="sticky-bottom padding footer border">
+    <span>Copyright &copy;</span>
+  </div>
+
+  <script type="text/javascript" src="./assets/javascript/firebaseapp.js"></script>
+
+  <!-- Link to Moment.js-->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- Latest compiled and minified JavaScript
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script> -->
+
+
+</body>
+
+</html>
