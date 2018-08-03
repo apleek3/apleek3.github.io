@@ -1,0 +1,172 @@
+html,
+body,
+header,
+.jarallax {
+  height: 100%;
+}
+
+/* COLOR PALETTE */
+/* 
+Prussian Blue: #0B3C5D
+Sky Blue: #328CC1
+Gold Leaf: #D9B310
+Ivory Black: #1D2731
+*/
+
+/* NAVBAR */
+.apl-navbar {
+  background-color: #1D2731;
+  opacity: 0.9;
+}
+
+.apl {
+  color: #0B3C5D;
+  font-weight: 1000;
+  text-shadow: 2px 2px 5px #0B3C5D;
+  
+}
+
+
+.apl-desc {
+  background-color: #D9B310;
+  opacity: 0.8;
+}
+
+.apl-highlighter {
+  background-color: #328CC1;
+  opacity: 0.9;
+}
+
+.opacity {
+  opacity: 0.7;
+  background-color: none;
+}
+
+
+
+
+/* BANNER */ 
+
+/*
+#home {
+  background-image: url('../images/brainData.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center center;
+}
+*/
+/******************* BODY ***********************/
+.mark {
+  padding: 0px 0px 0px 0px;
+}
+
+#dev-card {
+  background-color: #D9B310;
+}
+
+.bq-warning {
+  border-left: 3px solid #D9B310 !important;
+}
+
+.progress-bar { 
+  background-color: #328CC1;
+}
+
+.stopfade { 
+  opacity: .5;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.streak.streak-photo {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.streak.streak-md {
+  height: 400px;
+}
+.streak {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.h2-responsive {
+  font-weight: 500;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px #D9B310;
+}
+
+.box-shadow {
+  box-shadow: 10px 10px 5px #1D2731;
+}
+
+.gitButton {
+  background-color: #328CC1 !important;
+  color: white !important;
+  font-weight: 200;
+  box-shadow: 10px 10px 5px #1D2731;
+}
+
+a {
+  color: white !important;
+  font-weight: 200;
+}
+
+
+
+
+/*********** MEDIA SCREENS *************/
+@media screen and (max-width: 1920px) {
+  #bgvid {
+    object-fit: cover;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1920px) {
+  #bgvid {
+    width: 100%;
+    } 
+  }
+  
+  @media screen and (min-height: 1024px) {
+    #bgvid {
+      height: 100%;
+      } 
+    }
+    
+/*
+@media (min-width: 560px) and (max-width: 740px) {
+  html,
+  body,
+  header,
+  .jarallax {
+    height: 600px;
+  }
+  #bgvid {
+    object-fit: cover;
+    height: 100%
+  }
+}
+*/
