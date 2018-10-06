@@ -1,4 +1,4 @@
-# apleek3.github.io
+# Hello! I'm Alex.
 ## Welcome to my profile repository.
 
 Included herein are 9 projects that I'm particularly proud of including a group project that showcases 20 weeks of hard learning and teamwork!
@@ -7,7 +7,7 @@ I still have a lot to learn and I'm continuously working with outside learning r
 
 The projects are listed as followed:
 ![Projects Preview](./Assets/images/ProjectsPreview.png)
-Format: ![Alt Text](https://apleek3.github.io/#works)
+![Direct Link](https://apleek3.github.io/#works)
 
 
 I'm constantly learning. My progress can be tracked [here.](https://apleek3.github.io/#skills)
