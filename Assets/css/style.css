@@ -138,8 +138,14 @@ a {
   font-weight: 200;
 }
 
+.email {
+  color: #1D2731 !important; 
+}
 
-
+#contact {
+  margin: 0px auto 0px auto;
+  padding: 0px auto 0px auto;
+}
 
 /*********** MEDIA SCREENS *************/
 @media screen and (max-width: 1920px) {
